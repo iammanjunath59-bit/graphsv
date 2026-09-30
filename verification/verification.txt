@@ -1,0 +1,203 @@
+
+[1m=== 0. environment ===[0m
+  /home/iammanjunath59/miniforge3/envs/pg/bin/vg
+  /home/iammanjunath59/miniforge3/envs/pg/bin/bcftools
+  /home/iammanjunath59/miniforge3/envs/pg/bin/vcfbub
+  /home/iammanjunath59/miniforge3/envs/pg/bin/vcfwave
+  /home/iammanjunath59/miniforge3/envs/pg/bin/python3
+  statsmodels 0.14.6
+
+[1m=== 1. benchmark size ===[0m
+  chr20 stratified replicates: 108
+    expected: 108
+  chr20 SVs total:             2592
+    expected: 2592
+  chr20 distinct windows:      54
+    expected: 54
+  chr16 replicates:            61
+    expected: 61
+  chr16 SVs total:             1464
+    expected: 1464  (2592 + 1464 = 4056 total)
+  SVs per replicate (chr20):   24
+    expected: 24
+  size bins present:           100 1000 10000 300 3000 30000 
+  SV types present:               1886 DEL     685 DUP      21 INV 
+
+[1m=== 2. PGGB VCF route (wave) -- overall and by size bin ===[0m
+  windows=108  ac_present=0.8646  clean=0.8646
+    expected: 108  0.8646  0.8646
+      100 n= 432 0.988
+      300 n= 432 0.977
+     1000 n= 432 0.988
+     3000 n= 432 0.898
+    10000 n= 432 0.782
+    30000 n= 432 0.553
+    expected: 100:0.988  300:0.977  1000:0.988  3000:0.898  10000:0.782  30000:0.553
+
+[1m=== 3. Stage comparison (Supplementary Fig. 1) ===[0m
+  raw comparison files:  108
+  bub comparison files:  108
+    expected: 108 each
+  --- raw ---
+    ac_present=0.8777  clean=0.4664  (n=2592)
+  --- bub ---
+    ac_present=0.8773  clean=0.4653  (n=2592)
+    expected: raw 0.8777 / 0.4664   bub 0.8773 / 0.4653
+  clean by size bin:
+    raw  100:0.975 300:0.903 1000:0.597 3000:0.227 10000:0.062 30000:0.035 
+    bub  100:0.970 300:0.903 1000:0.595 3000:0.227 10000:0.062 30000:0.035 
+    expected: raw 0.975 0.903 0.597 0.227 0.062 0.035
+
+[1m=== 4. PGGB graph route (graphsv) ===[0m
+  overall exact=0.9923  (n=2592 SVs)
+    expected: 0.9923  n=2592
+      100 n= 432 0.9722
+      300 n= 432 0.9977
+     1000 n= 432 1.0000
+     3000 n= 432 1.0000
+    10000 n= 432 0.9977
+    30000 n= 432 0.9861
+    expected: 100:0.9722  300:0.9977  1000:1.0000  3000:1.0000  10000:0.9977  30000:0.9861
+  100bp misses that are NO-CALL (empty acs_found): 12/12
+    expected: 12/12  -- all misses are no-calls, not miscounts
+
+[1m=== 5. Minigraph-Cactus ===[0m
+  windows with comparison: 54
+    expected: 54
+  VCF route: n=54  ac_present=0.8750  clean=0.8750
+    expected: 54  0.8750  0.8750
+  graph route: exact=0.9877  (n=1296 SVs)
+    expected: 0.9877  n=1296
+  VCF route by bin:
+        100 n= 216 0.991
+        300 n= 216 0.986
+       1000 n= 216 0.991
+       3000 n= 216 0.912
+      10000 n= 216 0.801
+      30000 n= 216 0.569
+    expected: 100:0.991 300:0.986 1000:0.991 3000:0.912 10000:0.801 30000:0.569
+  graph route by bin:
+        100 n= 216 0.977
+        300 n= 216 0.995
+       1000 n= 216 0.995
+       3000 n= 216 0.995
+      10000 n= 216 0.995
+      30000 n= 216 0.968
+    expected: 100:0.977 300:0.995 1000:0.995 3000:0.995 10000:0.995 30000:0.968
+  panel identity check (MC vs PGGB truth tables):
+    identical panels: 54/54
+    expected: all identical -- builder comparison is only valid if this holds
+
+[1m=== 6. Regression -- chr20 and chr16 ===[0m
+--- key coefficients (cluster-robust model 2) ---
+   logsize_c  beta=-2.173  SE=0.139  z=-15.58  p=9.563e-55  OR=0.114
+    segdup10  beta=-0.419  SE=0.063  z=-6.62  p=3.624e-11  OR=0.657
+
+wrote /tmp/vf20.perSV.tsv, .cells.tsv, .model.txt
+    expected: logsize_c beta=-2.173 SE=0.139 ; segdup10 beta=-0.419 SE=0.063
+--- key coefficients (cluster-robust model 2) ---
+   logsize_c  beta=-2.183  SE=0.252  z=-8.68  p=4.128e-18  OR=0.113
+    segdup10  beta=-0.281  SE=0.061  z=-4.63  p=3.71e-06  OR=0.755
+
+wrote /tmp/vf16.perSV.tsv, .cells.tsv, .model.txt
+    expected: logsize_c beta=-2.183 SE=0.252 ; segdup10 beta=-0.281 SE=0.061
+  95% CIs (cluster-robust model 2, chr20):
+    expected: logsize_c CI -2.446 to -1.900 ; segdup10 CI -0.544 to -0.295
+  interaction term (chr20 model 3):
+logsize_c:segdup10    -0.1229      0.206     -0.596      0.551      -0.527       0.281
+    expected: -0.1229  SE 0.206  p=0.551  (no interaction)
+  MIXED MODEL CONVERGENCE -- must read 'No':
+Max. group size:  12      Converged:          No      
+    expected: Converged: No  -- so the LMM is NOT reportable; use the cluster-robust GLM
+  segdup-stratified cells (chr20):
+    bin    stratum     n   recov    lo95    hi95
+    100        low   392   0.987   0.970   0.995
+    100       high    40   1.000   0.912   1.000
+    300        low   392   0.982   0.964   0.991
+    300       high    40   0.925   0.801   0.974
+   1000        low   392   0.990   0.974   0.996
+   1000       high    40   0.975   0.871   0.996
+   3000        low   392   0.906   0.873   0.931
+   3000       high    40   0.825   0.680   0.913
+  10000        low   392   0.786   0.742   0.823
+  10000       high    40   0.750   0.598   0.858
+  30000        low   392   0.571   0.522   0.619
+  30000       high    40   0.375   0.242   0.530
+
+    expected: 30000 low 0.571 / high 0.375 ; 100 low 0.987 / high 1.000
+
+[1m=== 7. Segdup robustness (permutation) ===[0m
+=== 3. Window-level permutation of segdup labels ===
+permutations = 2000
+observed beta = -0.4193
+null mean = +0.0131, null sd = 0.1790
+null 2.5th / 97.5th pct = -0.3037 / +0.3961
+one-sided p (beta <= observed) = 0.0004998
+
+wrote /tmp/vf20_robustness.txt and /tmp/vf20_robustness.loo.tsv
+    expected: observed -0.4193 ; null mean +0.013 sd 0.179 ; one-sided p = 5.0e-04
+
+[1m=== 8. Merge audit ===[0m
+replicates: 108
+graph calls: 2512
+
+=== truth variants contained in each call ===
+  0 truth variant(s):   332 calls (0.1322)
+  1 truth variant(s):  2128 calls (0.8471)
+  2 truth variant(s):    48 calls (0.0191)
+  3 truth variant(s):     4 calls (0.0016)
+
+  FALSE FUSION RATE: 52/2512 = 0.0207
+  (calls spanning two or more distinct truth variants)
+
+=== calls overlapping each truth variant ===
+  0 call(s):    20 variants (0.0077)
+  1 call(s):  2570 variants (0.9915)
+  2 call(s):     2 variants (0.0008)
+
+  RESIDUAL SPLIT RATE: 2/2592 = 0.0008
+  (truth variants still represented by more than one call)
+
+=== opportunity for false fusion in the truth data ===
+  truth pairs sharing an identical carrier set: 79
+  ... and separated by <= 50 kb (at risk): 63
+  If this is zero, merging cannot have fused distinct variants in
+  this design, and the merge criterion is untested rather than safe.
+    expected: FALSE FUSION 52/2512 = 0.0207 ; RESIDUAL SPLIT 2/2592 = 0.0008
+    expected: 79 truth pairs share a carrier set, 63 within 50 kb  (opportunity exists)
+  NOTE: the value 0.017 quoted in older notes does NOT appear here.
+
+[1m=== 9. Realistic mode (sweep54r) ===[0m
+  n=108 ac_present=0.9847 clean=0.9847
+    expected: 108  clean=0.9847
+  mode field: realistic
+    expected: realistic   (sweep54d should read 'stratified')
+  sweep54d mode field: stratified
+
+[1m=== 10. Runtime ===[0m
+  SKIPPED: no GFA at results/sweep54d/chr20_10000000_s1.final.gfa.
+  Graphs are archived rather than committed; set GFA to one,
+  or point PANGENOME_DIR at a tree that contains them.
+    expected: 0.08-0.13 s vs 6.07-6.13 s ; 1751 records -- if records=0 the chain did not run
+
+[1m=== 11. UNVERIFIED -- these two are NOT re-derived above ===[0m
+  The Results draft states VIF = 1.0000 and GC p = 0.60 as evidence that the
+  size and segdup effects are separable. Neither was reproduced in the session
+  that produced the draft. Locate the script that computed them and run it, or
+  cut both clauses from the text. Candidates:
+    analysis/preflight_checks.py
+
+[1m=== 12. HPRC case study (requires network) ===[0m
+  Run only if re-checking the real-data section. Needs RAW/WAVE exported:
+
+    B="https://s3-us-west-2.amazonaws.com/human-pangenomics/pangenomes/freeze/release2/minigraph-cactus/v2.1/hprc-v2.1-mc-grch38"
+    export RAW="$B/hprc-v2.1-mc-grch38.raw.vcf.gz"
+    export WAVE="$B/hprc-v2.1-mc-grch38.wave.vcf.gz"
+    python3 wave_dispersal.py --pos 25783205 --event 111144578_112737255
+
+  expected: size 61,963 bp | 84 raw alleles | 216 carrier haplotypes | AN 461
+            carrier median deleted bp 61,964 -> dispersal ratio 1.000
+
+[1m=== done ===[0m
+Compare each printed value against its 'expected' line.
+Any mismatch, blank, or error means that number is unverified.

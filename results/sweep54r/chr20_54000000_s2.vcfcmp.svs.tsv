@@ -1,0 +1,10 @@
+sv_id	type	len	size_bin	synthetic	ac_true	n_sites	n_alleles	n_alleles_all	best_pos	best_reflen	pos_offset	len_ratio	exact_ac_present	exact_ac_anywhere	min_an
+SV0000	DEL	10932		False	1	1	1	1	30531	10933	0	1.0001	1	1	20
+SV0001	DEL	126		False	2	1	1	1	83245	127	-1	1.0079	1	1	20
+SV0002	DUP	50		False	1	1	1	1	103207	51	-1	1.02	1	1	20
+SV0003	DEL	321		False	2	1	1	1	133754	322	-1	1.0031	1	1	20
+SV0004	DEL	1090		False	2	1	1	1	249712	1091	-1	1.0009	1	1	20
+SV0005	DEL	121		False	1	1	1	1	330799	122	-1	1.0083	1	1	20
+SV0006	DEL	105		False	1	1	1	1	644897	106	-4	1.0095	1	1	20
+SV0007	DEL	300		False	17	1	1	1	676124	301	-2	1.0033	1	1	20
+SV0008	DEL	1625		False	2	1	1	1	986941	1626	-1	1.0006	1	1	20

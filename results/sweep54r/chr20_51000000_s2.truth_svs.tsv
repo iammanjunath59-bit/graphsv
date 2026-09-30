@@ -1,0 +1,5 @@
+sv_id	type	start	end	len	ac	af	gnomad_af	size_bin	synthetic	carriers
+SV0000	DUP	61091	61157	66	10	0.5	0.574913		False	0,2,3,4,5,6,7,11,16,17
+SV0001	DUP	210991	211059	68	1	0.05	0.001493		False	19
+SV0002	DEL	776858	777626	768	1	0.05	0.001064		False	11
+SV0003	DEL	875236	875927	691	4	0.2	0.14342		False	3,8,11,16

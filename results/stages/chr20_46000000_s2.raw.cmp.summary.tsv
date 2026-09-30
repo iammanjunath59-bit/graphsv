@@ -1,0 +1,2 @@
+prefix	mode	contig	seed	n_snp_truth	snp_found_frac	snp_ac_exact_frac	n_sv_truth	sv_found_frac	sv_ac_present_frac	sv_clean_frac	n_vcf_records	frac_sites_an_lt_max
+chr20_46000000_s2	stratified	chr20:46000001-47000000	2	1741	0.99483	0.99368	24	1.0	0.9167	0.4583	1756	0.06891

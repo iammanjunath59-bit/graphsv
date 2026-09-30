@@ -1,0 +1,7 @@
+sv_id	type	len	size_bin	ac_true	n_sites	acs_found	exact
+SV0000	DEL	660		1	1	1	1
+SV0001	DEL	577		4	1	4	1
+SV0002	DUP	175		3	1	3	1
+SV0003	DEL	851		5	1	5	1
+SV0004	DUP	113		6	1	6	1
+SV0005	DEL	727		1	1	1	1

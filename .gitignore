@@ -1,0 +1,11 @@
+*.fa
+*.fa.gz
+*.fai
+*.gfa
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*_out/
+*_js/
+__pycache__/
+.DS_Store

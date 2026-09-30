@@ -1,0 +1,11 @@
+kind	label	alleles	copies	max_single
+class	deletion	84	216	25
+class	reflike	132	132	1
+class	insertion	112	113	2
+record	25783207		200	
+record	25783899		12	
+record	25785257		3	
+record	25787417		1	
+meta	AN		461	
+meta	ref_len		68466	
+meta	event_size		61963	
