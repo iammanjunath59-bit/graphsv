@@ -219,7 +219,8 @@ commit.
 `data/` holds the window annotations, the segmental duplication and GC tracks,
 and the structural variant intervals used for placement.
 
-Not committed, and archived at [Zenodo DOI] instead:
+Not committed, and archived at https://doi.org/10.5281/zenodo.23083851
+instead (concept DOI; it always resolves to the latest version):
 
 - the 108 PGGB graphs and 54 Minigraph-Cactus graphs,
 - the simulated haplotype FASTA files,
