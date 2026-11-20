@@ -1,0 +1,26 @@
+Split variants: no single allele carries the exact carrier set, but
+two or more pieces exist.
+
+type    bin    n split pieces med  one pos same len  cover min subs med
+DEL     100  134     0
+DEL     300  180     0
+DEL    1000  191     0
+DEL    3000  177     0
+DEL   10000  149     0
+DEL   30000  115     0
+DUP     100   82     0
+DUP     300   36     0
+DUP    1000   25     0
+DUP    3000   39     0
+DUP   10000   66     0
+DUP   30000   93     0
+INV   10000    1     0
+INV   30000    8     0
+
+split       variants with no exact single allele and two or more pieces
+pieces med  median number of pieces per split variant
+one pos     split variants whose pieces all share one position
+same len    split variants whose pieces all have one length
+cover       split variants whose pieces' carriers together equal the truth
+min subs    median, over split variants, of the smallest substitution
+            count between two pieces (same length pieces only)

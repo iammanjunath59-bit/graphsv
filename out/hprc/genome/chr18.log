@@ -1,0 +1,37 @@
+  20000 alleles, at chr18:68209984
+haplotypes counted: all
+alleles of at least 50 bp with a carrier: 38775
+events after joining: 23685
+rule: size within max(10 bp, 1%); start within max(200 bp, 1.0 x size); disjoint haplotypes; shared 21-mers >= 0.8; same site only: True
+
+kind  size        events  fragmented  frac   alleles med  multi record  of which one site  carriers outside largest allele
+DEL        50-100    1837        250  0.136          2.0           125              125  0.041
+DEL       100-300    1782        219  0.123          2.0           133              133  0.050
+DEL      300-1000     986         63  0.064          2.0            37               37  0.015
+DEL     1000-3000     344         19  0.055          2.0            13               13  0.016
+DEL    3000-10000     160         14  0.087          2.0            10               10  0.023
+DEL   10000-30000      40          6  0.150          2.0             4                4  0.124
+DEL       >=30000      15          3  0.200          2.0             2                2  0.125
+INS        50-100    3974        877  0.221          2.0           138              138  0.095
+INS       100-300    5703       1512  0.265          2.0           145              145  0.140
+INS      300-1000    5430       1598  0.294          2.0            90               90  0.286
+INS     1000-3000    2558        689  0.269          2.0            37               37  0.394
+INS    3000-10000     726        167  0.230          2.0             9                9  0.625
+INS   10000-30000     105         34  0.324          2.0             2                2  0.792
+INS       >=30000       9          0  0.000          0.0             0                0  0.000
+INV        50-100      15          0  0.000          0.0             0                0  0.000
+INV     1000-3000       1          1  1.000         13.0             0                0  0.370
+
+fragmented        events joined from two or more alleles
+alleles med       median alleles per fragmented event
+multi record      fragmented events whose alleles span two or more records
+one site          of those, events whose records all come from one graph
+                  site (same snarl ID); the rule never reads the ID
+carriers outside  share of all carriers in the class that are not in their
+                  event's largest allele, i.e. missed by a per allele count
+
+No truth set exists for real data, so these are joins by the rule, not
+verified events. In simulation the rule made no false joins at 21-mer
+thresholds of 0.5 to 0.9.
+
+wrote /home/iammanjunath59/graphsv/out/hprc/genome/chr18.events.tsv and /home/iammanjunath59/graphsv/out/hprc/genome/chr18.summary.txt

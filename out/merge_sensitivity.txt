@@ -1,0 +1,96 @@
+== pos_frac 0.25 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9244
+  variants gained 163   variants lost 2
+  matching a true variant             0.9991   0.9989
+    false_fusion           1
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 0.25 size_frac 0.10
+  exact carrier set, type matched     0.8623   0.9244
+  variants gained 163   variants lost 2
+  matching a true variant             0.9991   0.9989
+    false_fusion           1
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 0.25 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9236
+  variants gained 163   variants lost 4
+  matching a true variant             0.9991   0.9989
+    false_fusion           2
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 0.25 size_frac 0.30
+  exact carrier set, type matched     0.8623   0.9236
+  variants gained 163   variants lost 4
+  matching a true variant             0.9991   0.9989
+    false_fusion           2
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 0.5 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9325
+  variants gained 184   variants lost 2
+  matching a true variant             0.9991   0.9989
+    false_fusion           1
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 0.5 size_frac 0.10
+  exact carrier set, type matched     0.8623   0.9325
+  variants gained 184   variants lost 2
+  matching a true variant             0.9991   0.9989
+    false_fusion           1
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 0.5 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9313
+  variants gained 183   variants lost 4
+  matching a true variant             0.9991   0.9989
+    false_fusion           3
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 0.5 size_frac 0.30
+  exact carrier set, type matched     0.8623   0.9313
+  variants gained 183   variants lost 4
+  matching a true variant             0.9991   0.9989
+    false_fusion           4
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 1.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9869
+  variants gained 329   variants lost 6
+  matching a true variant             0.9991   0.9988
+    false_fusion           4
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 1.0 size_frac 0.10
+  exact carrier set, type matched     0.8623   0.9869
+  variants gained 329   variants lost 6
+  matching a true variant             0.9991   0.9988
+    false_fusion           4
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 1.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9830
+  variants gained 325   variants lost 12
+  matching a true variant             0.9991   0.9988
+    false_fusion           9
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 1.0 size_frac 0.30
+  exact carrier set, type matched     0.8623   0.9784
+  variants gained 320   variants lost 19
+  matching a true variant             0.9991   0.9988
+    false_fusion           15
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 2.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9853
+  variants gained 327   variants lost 8
+  matching a true variant             0.9991   0.9988
+    false_fusion           6
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 2.0 size_frac 0.10
+  exact carrier set, type matched     0.8623   0.9853
+  variants gained 327   variants lost 8
+  matching a true variant             0.9991   0.9988
+    false_fusion           6
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 2.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9769
+  variants gained 317   variants lost 20
+  matching a true variant             0.9991   0.9988
+    false_fusion           17
+RECALL by type and size, exact carrier set: before -> after
+== pos_frac 2.0 size_frac 0.30
+  exact carrier set, type matched     0.8623   0.9691
+  variants gained 310   variants lost 33
+  matching a true variant             0.9991   0.9988
+    false_fusion           26
+RECALL by type and size, exact carrier set: before -> after

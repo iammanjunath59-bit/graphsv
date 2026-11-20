@@ -1,0 +1,21 @@
+chromosomes: 22  (chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17, chr18, chr19, chr20, chr21, chr22)
+
+Genome wide share of carriers outside each event's largest allele,
+with the range of the per chromosome values (classes with at least
+20 events on that chromosome).
+
+kind        size   events fragmented carriers missed   per chromosome min to max
+DEL       50-100    59693       8418           0.049       0.033 to 0.071 (n=22)
+DEL      100-300    52893       5955           0.039       0.027 to 0.058 (n=22)
+DEL     300-1000    27997       1867           0.018       0.007 to 0.038 (n=22)
+DEL    1000-3000    10612        471           0.020       0.004 to 0.039 (n=22)
+DEL   3000-10000     5641        200           0.030       0.002 to 0.094 (n=22)
+DEL  10000-30000     1332         99           0.110       0.001 to 0.308 (n=22)
+DEL      >=30000      446         78           0.286       0.000 to 0.633 (n=12)
+INS       50-100   134426      30582           0.100       0.075 to 0.138 (n=22)
+INS      100-300   174919      47346           0.161       0.138 to 0.181 (n=22)
+INS     300-1000   153562      46084           0.301       0.263 to 0.324 (n=22)
+INS    1000-3000    69536      19317           0.432       0.344 to 0.507 (n=22)
+INS   3000-10000    23748       6763           0.607       0.542 to 0.709 (n=22)
+INS  10000-30000     3913       1291           0.734       0.570 to 0.849 (n=22)
+INS      >=30000      870        290           0.795       0.429 to 0.915 (n=14)

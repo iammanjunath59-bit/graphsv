@@ -1,0 +1,100 @@
+== kmer 0 pos_frac 1.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9869
+  variants gained 329   variants lost 6
+  alleles reported                      3420     2577
+  matching a true variant             0.9991   0.9988
+    false_fusion           4
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0 pos_frac 1.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9830
+  variants gained 325   variants lost 12
+  alleles reported                      3420     2573
+  matching a true variant             0.9991   0.9988
+    false_fusion           9
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0 pos_frac 2.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9853
+  variants gained 327   variants lost 8
+  alleles reported                      3420     2576
+  matching a true variant             0.9991   0.9988
+    false_fusion           6
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0 pos_frac 2.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9769
+  variants gained 317   variants lost 20
+  alleles reported                      3420     2568
+  matching a true variant             0.9991   0.9988
+    false_fusion           17
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.5 pos_frac 1.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9900
+  variants gained 331   variants lost 0
+  alleles reported                      3420     2581
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.5 pos_frac 1.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9900
+  variants gained 331   variants lost 0
+  alleles reported                      3420     2581
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.5 pos_frac 2.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9900
+  variants gained 331   variants lost 0
+  alleles reported                      3420     2581
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.5 pos_frac 2.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9900
+  variants gained 331   variants lost 0
+  alleles reported                      3420     2581
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.8 pos_frac 1.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9900
+  variants gained 331   variants lost 0
+  alleles reported                      3420     2581
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.8 pos_frac 1.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9900
+  variants gained 331   variants lost 0
+  alleles reported                      3420     2581
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.8 pos_frac 2.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9900
+  variants gained 331   variants lost 0
+  alleles reported                      3420     2581
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.8 pos_frac 2.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9900
+  variants gained 331   variants lost 0
+  alleles reported                      3420     2581
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.9 pos_frac 1.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9888
+  variants gained 328   variants lost 0
+  alleles reported                      3420     2584
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.9 pos_frac 1.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9888
+  variants gained 328   variants lost 0
+  alleles reported                      3420     2584
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.9 pos_frac 2.0 size_frac 0.05
+  exact carrier set, type matched     0.8623   0.9888
+  variants gained 328   variants lost 0
+  alleles reported                      3420     2584
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after
+== kmer 0.9 pos_frac 2.0 size_frac 0.20
+  exact carrier set, type matched     0.8623   0.9888
+  variants gained 328   variants lost 0
+  alleles reported                      3420     2584
+  matching a true variant             0.9991   0.9988
+RECALL by type and size, exact carrier set: before -> after

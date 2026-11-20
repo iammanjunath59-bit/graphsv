@@ -1,0 +1,25 @@
+pass1 done: 3,355,733 segments
+reference path: GRCh38#0#chr20 (2,126,812 steps)
+reference passes through 23007 segments in the interval
+  pass2: 100 paths
+  pass2: 200 paths
+  pass2: 300 paths
+  pass2: 400 paths
+  pass2: 500 paths
+  pass2: 600 paths
+  pass2: 700 paths
+pass2 done: 724 paths, 497 touch the interval
+
+distinct traversals through the interval: 60
+  A0:  157 haplotypes,  1116 steps,  115,715 bp, 548 reverse
+  A1:   46 haplotypes,  1468 steps,  151,910 bp, 617 reverse
+  A2:   39 haplotypes,  1470 steps,  152,124 bp, 550 reverse
+  A3:   35 haplotypes,  1471 steps,  152,174 bp, 550 reverse
+  A4:   25 haplotypes,  1100 steps,  114,734 bp, 544 reverse
+  A5:   24 haplotypes,  1468 steps,  151,910 bp, 548 reverse
+  A6:   20 haplotypes,    28 steps,    1,752 bp, 4 reverse
+  A7:   17 haplotypes,  1471 steps,  152,174 bp, 619 reverse
+  A8:   16 haplotypes,  1117 steps,  115,833 bp, 267 reverse
+  A9:   12 haplotypes,  1115 steps,  115,551 bp, 548 reverse
+
+wrote out/hprc/graph/locus_25p7.alleles.tsv and out/hprc/graph/locus_25p7.refsegs.tsv

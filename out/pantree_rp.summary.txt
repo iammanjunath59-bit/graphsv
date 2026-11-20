@@ -1,0 +1,37 @@
+replicates: 108   true variants: 2592   callset alleles scored: 2637
+
+RECALL under successively stricter criteria, all variants
+  a record overlaps                                          0.9965
+  and its size matches                                       0.9942
+  and its type matches                                       0.9742
+  true count among overlapping alternates                    0.9606
+  true count among type matched alternates                   0.9537
+  a type matched alternate has the exact carrier set         0.9537
+
+PRECISION of the callset
+  callset alleles of at least 50 bp: 2637
+  matching a true variant of compatible type and size: 0.9628
+    DEL  n=  1954  precision 0.9642
+    INS  n=   677  precision 0.9601
+    INV  n=     6  precision 0.8333
+
+RECALL by size class: overlap / size / type / count / count typed / carriers
+      100 n=  432  0.991  0.991  0.991  0.988  0.988  0.988
+      300 n=  432  0.995  0.993  0.993  0.988  0.986  0.986
+     1000 n=  432  1.000  1.000  1.000  0.995  0.995  0.995
+     3000 n=  432  1.000  1.000  1.000  0.970  0.968  0.968
+    10000 n=  432  1.000  0.998  0.995  0.942  0.940  0.940
+    30000 n=  432  0.993  0.984  0.866  0.880  0.845  0.845
+
+RECALL by true variant type
+  DEL  n= 1886  0.997  0.994  0.994  0.992  0.990  0.990
+  DUP  n=  685  0.994  0.994  0.942  0.880  0.874  0.874
+  INV  n=   21  1.000  1.000  0.238  0.762  0.238  0.238
+
+FAILURE against the number of alleles at the matched site
+  alleles       1 to 2  n=  287  count 0.979  carriers 0.979
+  alleles       3 to 4  n=  555  count 0.987  carriers 0.982
+  alleles       5 to 9  n= 1533  count 0.985  carriers 0.978
+  alleles     10 to 29  n=  190  count 0.795  carriers 0.774
+
+Note: simulated duplications are tandem and appear in the callset as insertions, so DUP is matched against the insertion class. A VCF record cannot distinguish a tandem duplication from any other insertion of the same length without inspecting the sequence.

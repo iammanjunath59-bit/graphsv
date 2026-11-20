@@ -1,0 +1,24 @@
+alleles of at least 50 bp: 288
+events after merging: 45
+events joined from two or more records: 27
+  chr20:25781791 INS 165 bp  records 2  ac 221  pieces 1+220
+  chr20:25783207 DEL 61948 bp  records 4  ac 216  pieces 200+12+3+1
+  chr20:25781791 INS 168 bp  records 4  ac 214  pieces 1+2+5+206
+  chr20:25845152 INS 16971 bp  records 93  ac 113  pieces 2+4+1+1+1+1+1+1+2+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+2+1+1+1+1+2+1+2+1+2+1+1+1+1+1+1+1+1+1+2+1+1+1+1+2+1+2+1+1+1+1+1+1+1+1+1+1+1+1+3+1+1+1+1+4+1+1+1+1+1+1+1+3+1+1+1+1+1+1+1+1+1+2+1+1+1+1
+  chr20:25856301 DEL 252 bp  records 4  ac 113  pieces 8+94+9+2
+  chr20:25889044 DEL 297 bp  records 2  ac 112  pieces 104+8
+  chr20:25857530 INS 20966 bp  records 88  ac 110  pieces 1+1+1+1+1+1+1+2+1+1+1+1+1+1+1+1+1+2+1+1+1+1+1+1+1+1+1+1+1+2+1+1+1+2+2+1+1+1+1+6+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+2+1+1+1+1+1+1+1+2+3+1+1+1+1+1+1+3+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+7
+  chr20:25874980 INS 72 bp  records 10  ac 45  pieces 1+1+1+2+9+15+7+1+1+7
+  chr20:25775692 INS 301 bp  records 5  ac 36  pieces 1+21+1+12+1
+  chr20:25874980 INS 94 bp  records 9  ac 34  pieces 1+19+2+2+1+1+1+6+1
+  chr20:25781791 INS 174 bp  records 2  ac 27  pieces 5+22
+  chr20:25874976 DEL 52 bp  records 2  ac 27  pieces 1+26
+  chr20:25775480 INS 321 bp  records 4  ac 24  pieces 1+8+7+8
+  chr20:25874939 DEL 58 bp  records 4  ac 17  pieces 4+4+5+4
+  chr20:25775480 INS 321 bp  records 3  ac 12  pieces 1+10+1
+  chr20:25874898 INS 240 bp  records 2  ac 12  pieces 11+1
+  chr20:25726914 INS 11725 bp  records 4  ac 6  pieces 1+1+2+2
+  chr20:25874896 INS 322 bp  records 4  ac 6  pieces 1+3+1+1
+  chr20:25874896 INS 78 bp  records 5  ac 6  pieces 1+1+1+1+2
+  chr20:25874882 INS 354 bp  records 3  ac 4  pieces 2+1+1
+wrote out/hprc/locus.merged.tsv

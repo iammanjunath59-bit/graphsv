@@ -1,0 +1,246 @@
+vg version v1.78.0 "Sharptooth"
+chr20_10000000_s1  plain wave records 1751  gref reference contig wave records 1751  gref contig raw records 7
+chr20_10000000_s2  plain wave records 1756  gref reference contig wave records 1756  gref contig raw records 0
+chr20_1000000_s1  plain wave records 1788  gref reference contig wave records 1788  gref contig raw records 3
+GREF FAILED chr20_1000000_s2
+[gref error]: node 1341 covered by two reference paths, including anc#1#chr20:1000001-2000000#0 and anc#1#chr20:1000001-2000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_11000000_s1
+[gref error]: node 1687 covered by two reference paths, including anc#1#chr20:11000001-12000000#0 and anc#1#chr20:11000001-12000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_11000000_s2
+[gref error]: node 1444 covered by two reference paths, including anc#1#chr20:11000001-12000000#0 and anc#1#chr20:11000001-12000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_12000000_s1
+[gref error]: node 1695 covered by two reference paths, including anc#1#chr20:12000001-13000000#0 and anc#1#chr20:12000001-13000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_12000000_s2
+[gref error]: node 1580 covered by two reference paths, including anc#1#chr20:12000001-13000000#0 and anc#1#chr20:12000001-13000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_13000000_s1  plain wave records 1755  gref reference contig wave records 1755  gref contig raw records 0
+chr20_13000000_s2  plain wave records 1731  gref reference contig wave records 1731  gref contig raw records 4
+GREF FAILED chr20_14000000_s1
+[gref error]: node 2322 covered by two reference paths, including anc#1#chr20:14000001-15000000#0 and anc#1#chr20:14000001-15000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_14000000_s2
+[gref error]: node 1233 covered by two reference paths, including anc#1#chr20:14000001-15000000#0 and anc#1#chr20:14000001-15000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_15000000_s1
+[gref error]: node 508 covered by two reference paths, including anc#1#chr20:15000001-16000000#0 and anc#1#chr20:15000001-16000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_15000000_s2
+[gref error]: node 814 covered by two reference paths, including anc#1#chr20:15000001-16000000#0 and anc#1#chr20:15000001-16000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_16000000_s1
+[gref error]: node 2641 covered by two reference paths, including anc#1#chr20:16000001-17000000#0 and anc#1#chr20:16000001-17000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_16000000_s2
+[gref error]: node 2072 covered by two reference paths, including anc#1#chr20:16000001-17000000#0 and anc#1#chr20:16000001-17000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_17000000_s1
+[gref error]: node 2992 covered by two reference paths, including anc#1#chr20:17000001-18000000#0 and anc#1#chr20:17000001-18000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_17000000_s2
+[gref error]: node 2309 covered by two reference paths, including anc#1#chr20:17000001-18000000#0 and anc#1#chr20:17000001-18000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_18000000_s1
+[gref error]: node 2655 covered by two reference paths, including anc#1#chr20:18000001-19000000#0 and anc#1#chr20:18000001-19000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_18000000_s2
+[gref error]: node 3038 covered by two reference paths, including anc#1#chr20:18000001-19000000#0 and anc#1#chr20:18000001-19000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_19000000_s1
+[gref error]: node 1212 covered by two reference paths, including anc#1#chr20:19000001-20000000#0 and anc#1#chr20:19000001-20000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_19000000_s2
+[gref error]: node 1069 covered by two reference paths, including anc#1#chr20:19000001-20000000#0 and anc#1#chr20:19000001-20000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_20000000_s1
+[gref error]: node 1637 covered by two reference paths, including anc#1#chr20:20000001-21000000#0 and anc#1#chr20:20000001-21000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_20000000_s2
+[gref error]: node 1247 covered by two reference paths, including anc#1#chr20:20000001-21000000#0 and anc#1#chr20:20000001-21000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_2000000_s1
+[gref error]: node 951 covered by two reference paths, including anc#1#chr20:2000001-3000000#0 and anc#1#chr20:2000001-3000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_2000000_s2
+[gref error]: node 277 covered by two reference paths, including anc#1#chr20:2000001-3000000#0 and anc#1#chr20:2000001-3000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_21000000_s1
+[gref error]: node 2089 covered by two reference paths, including anc#1#chr20:21000001-22000000#0 and anc#1#chr20:21000001-22000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_21000000_s2
+[gref error]: node 1989 covered by two reference paths, including anc#1#chr20:21000001-22000000#0 and anc#1#chr20:21000001-22000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_22000000_s1  plain wave records 1755  gref reference contig wave records 1755  gref contig raw records 8
+chr20_22000000_s2  plain wave records 1761  gref reference contig wave records 1761  gref contig raw records 1
+GREF FAILED chr20_23000000_s1
+[gref error]: node 5743 covered by two reference paths, including anc#1#chr20:23000001-24000000#0 and anc#1#chr20:23000001-24000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_23000000_s2
+[gref error]: node 2407 covered by two reference paths, including anc#1#chr20:23000001-24000000#0 and anc#1#chr20:23000001-24000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_24000000_s1
+[gref error]: node 2066 covered by two reference paths, including anc#1#chr20:24000001-25000000#0 and anc#1#chr20:24000001-25000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_24000000_s2
+[gref error]: node 4496 covered by two reference paths, including anc#1#chr20:24000001-25000000#0 and anc#1#chr20:24000001-25000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_25000000_s1
+[gref error]: node 570 covered by two reference paths, including anc#1#chr20:25000001-26000000#0 and anc#1#chr20:25000001-26000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_25000000_s2
+[gref error]: node 610 covered by two reference paths, including anc#1#chr20:25000001-26000000#0 and anc#1#chr20:25000001-26000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_3000000_s1
+[gref error]: node 2131 covered by two reference paths, including anc#1#chr20:3000001-4000000#0 and anc#1#chr20:3000001-4000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_3000000_s2
+[gref error]: node 1071 covered by two reference paths, including anc#1#chr20:3000001-4000000#0 and anc#1#chr20:3000001-4000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_32000000_s1
+[gref error]: node 3987 covered by two reference paths, including anc#1#chr20:32000001-33000000#0 and anc#1#chr20:32000001-33000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_32000000_s2
+[gref error]: node 4038 covered by two reference paths, including anc#1#chr20:32000001-33000000#0 and anc#1#chr20:32000001-33000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_33000000_s1
+[gref error]: node 364 covered by two reference paths, including anc#1#chr20:33000001-34000000#0 and anc#1#chr20:33000001-34000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_33000000_s2
+[gref error]: node 402 covered by two reference paths, including anc#1#chr20:33000001-34000000#0 and anc#1#chr20:33000001-34000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_34000000_s1
+[gref error]: node 32 covered by two reference paths, including anc#1#chr20:34000001-35000000#0 and anc#1#chr20:34000001-35000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_34000000_s2
+[gref error]: node 4349 covered by two reference paths, including anc#1#chr20:34000001-35000000#0 and anc#1#chr20:34000001-35000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_35000000_s1
+[gref error]: node 236 covered by two reference paths, including anc#1#chr20:35000001-36000000#0 and anc#1#chr20:35000001-36000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_35000000_s2
+[gref error]: node 1643 covered by two reference paths, including anc#1#chr20:35000001-36000000#0 and anc#1#chr20:35000001-36000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_36000000_s1
+[gref error]: node 3453 covered by two reference paths, including anc#1#chr20:36000001-37000000#0 and anc#1#chr20:36000001-37000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_36000000_s2
+[gref error]: node 2500 covered by two reference paths, including anc#1#chr20:36000001-37000000#0 and anc#1#chr20:36000001-37000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_37000000_s1
+[gref error]: node 4994 covered by two reference paths, including anc#1#chr20:37000001-38000000#0 and anc#1#chr20:37000001-38000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_37000000_s2
+[gref error]: node 2715 covered by two reference paths, including anc#1#chr20:37000001-38000000#0 and anc#1#chr20:37000001-38000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_38000000_s1
+[gref error]: node 2016 covered by two reference paths, including anc#1#chr20:38000001-39000000#0 and anc#1#chr20:38000001-39000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_38000000_s2
+[gref error]: node 643 covered by two reference paths, including anc#1#chr20:38000001-39000000#0 and anc#1#chr20:38000001-39000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_39000000_s1
+[gref error]: node 901 covered by two reference paths, including anc#1#chr20:39000001-40000000#0 and anc#1#chr20:39000001-40000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_39000000_s2
+[gref error]: node 774 covered by two reference paths, including anc#1#chr20:39000001-40000000#0 and anc#1#chr20:39000001-40000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_40000000_s1  plain wave records 1784  gref reference contig wave records 1784  gref contig raw records 9
+chr20_40000000_s2  plain wave records 1766  gref reference contig wave records 1766  gref contig raw records 35
+chr20_4000000_s1  plain wave records 1786  gref reference contig wave records 1786  gref contig raw records 11
+chr20_4000000_s2  plain wave records 1777  gref reference contig wave records 1777  gref contig raw records 6
+GREF FAILED chr20_41000000_s1
+[gref error]: node 915 covered by two reference paths, including anc#1#chr20:41000001-42000000#0 and anc#1#chr20:41000001-42000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_41000000_s2  plain wave records 1758  gref reference contig wave records 1758  gref contig raw records 1
+GREF FAILED chr20_42000000_s1
+[gref error]: node 2895 covered by two reference paths, including anc#1#chr20:42000001-43000000#0 and anc#1#chr20:42000001-43000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_42000000_s2
+[gref error]: node 2292 covered by two reference paths, including anc#1#chr20:42000001-43000000#0 and anc#1#chr20:42000001-43000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_43000000_s1
+[gref error]: node 4596 covered by two reference paths, including anc#1#chr20:43000001-44000000#0 and anc#1#chr20:43000001-44000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_43000000_s2
+[gref error]: node 3149 covered by two reference paths, including anc#1#chr20:43000001-44000000#0 and anc#1#chr20:43000001-44000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_44000000_s1
+[gref error]: node 951 covered by two reference paths, including anc#1#chr20:44000001-45000000#0 and anc#1#chr20:44000001-45000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_44000000_s2
+[gref error]: node 752 covered by two reference paths, including anc#1#chr20:44000001-45000000#0 and anc#1#chr20:44000001-45000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_45000000_s1
+[gref error]: node 4756 covered by two reference paths, including anc#1#chr20:45000001-46000000#0 and anc#1#chr20:45000001-46000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_45000000_s2
+[gref error]: node 4340 covered by two reference paths, including anc#1#chr20:45000001-46000000#0 and anc#1#chr20:45000001-46000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_46000000_s1
+[gref error]: node 4568 covered by two reference paths, including anc#1#chr20:46000001-47000000#0 and anc#1#chr20:46000001-47000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_46000000_s2
+[gref error]: node 3213 covered by two reference paths, including anc#1#chr20:46000001-47000000#0 and anc#1#chr20:46000001-47000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_47000000_s1
+[gref error]: node 2304 covered by two reference paths, including anc#1#chr20:47000001-48000000#0 and anc#1#chr20:47000001-48000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_47000000_s2
+[gref error]: node 1540 covered by two reference paths, including anc#1#chr20:47000001-48000000#0 and anc#1#chr20:47000001-48000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_48000000_s1
+[gref error]: node 2967 covered by two reference paths, including anc#1#chr20:48000001-49000000#0 and anc#1#chr20:48000001-49000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_48000000_s2
+[gref error]: node 99 covered by two reference paths, including anc#1#chr20:48000001-49000000#0 and anc#1#chr20:48000001-49000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_49000000_s1
+[gref error]: node 610 covered by two reference paths, including anc#1#chr20:49000001-50000000#0 and anc#1#chr20:49000001-50000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_49000000_s2
+[gref error]: node 1868 covered by two reference paths, including anc#1#chr20:49000001-50000000#0 and anc#1#chr20:49000001-50000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_50000000_s1
+[gref error]: node 2037 covered by two reference paths, including anc#1#chr20:50000001-51000000#0 and anc#1#chr20:50000001-51000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_50000000_s2
+[gref error]: node 4974 covered by two reference paths, including anc#1#chr20:50000001-51000000#0 and anc#1#chr20:50000001-51000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_5000000_s1
+[gref error]: node 2369 covered by two reference paths, including anc#1#chr20:5000001-6000000#0 and anc#1#chr20:5000001-6000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_5000000_s2
+[gref error]: node 297 covered by two reference paths, including anc#1#chr20:5000001-6000000#0 and anc#1#chr20:5000001-6000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_51000000_s1
+[gref error]: node 984 covered by two reference paths, including anc#1#chr20:51000001-52000000#0 and anc#1#chr20:51000001-52000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_51000000_s2
+[gref error]: node 1061 covered by two reference paths, including anc#1#chr20:51000001-52000000#0 and anc#1#chr20:51000001-52000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_52000000_s1
+[gref error]: node 625 covered by two reference paths, including anc#1#chr20:52000001-53000000#0 and anc#1#chr20:52000001-53000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_52000000_s2
+[gref error]: node 61 covered by two reference paths, including anc#1#chr20:52000001-53000000#0 and anc#1#chr20:52000001-53000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_53000000_s1
+[gref error]: node 1738 covered by two reference paths, including anc#1#chr20:53000001-54000000#0 and anc#1#chr20:53000001-54000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_53000000_s2
+[gref error]: node 2957 covered by two reference paths, including anc#1#chr20:53000001-54000000#0 and anc#1#chr20:53000001-54000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_54000000_s1
+[gref error]: node 2684 covered by two reference paths, including anc#1#chr20:54000001-55000000#0 and anc#1#chr20:54000001-55000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_54000000_s2  plain wave records 1741  gref reference contig wave records 1741  gref contig raw records 7
+GREF FAILED chr20_55000000_s1
+[gref error]: node 687 covered by two reference paths, including anc#1#chr20:55000001-56000000#0 and anc#1#chr20:55000001-56000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_55000000_s2
+[gref error]: node 4987 covered by two reference paths, including anc#1#chr20:55000001-56000000#0 and anc#1#chr20:55000001-56000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_56000000_s1
+[gref error]: node 416 covered by two reference paths, including anc#1#chr20:56000001-57000000#0 and anc#1#chr20:56000001-57000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_56000000_s2
+[gref error]: node 2764 covered by two reference paths, including anc#1#chr20:56000001-57000000#0 and anc#1#chr20:56000001-57000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_57000000_s1  plain wave records 1772  gref reference contig wave records 1772  gref contig raw records 0
+chr20_57000000_s2  plain wave records 1772  gref reference contig wave records 1772  gref contig raw records 0
+GREF FAILED chr20_58000000_s1
+[gref error]: node 2572 covered by two reference paths, including anc#1#chr20:58000001-59000000#0 and anc#1#chr20:58000001-59000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_58000000_s2
+[gref error]: node 2066 covered by two reference paths, including anc#1#chr20:58000001-59000000#0 and anc#1#chr20:58000001-59000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_59000000_s1  plain wave records 1753  gref reference contig wave records 1753  gref contig raw records 1
+chr20_59000000_s2  plain wave records 1770  gref reference contig wave records 1770  gref contig raw records 4
+GREF FAILED chr20_60000000_s1
+[gref error]: node 2220 covered by two reference paths, including anc#1#chr20:60000001-61000000#0 and anc#1#chr20:60000001-61000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_60000000_s2  plain wave records 1768  gref reference contig wave records 1768  gref contig raw records 3
+chr20_6000000_s1  plain wave records 1793  gref reference contig wave records 1793  gref contig raw records 5
+chr20_6000000_s2  plain wave records 1772  gref reference contig wave records 1772  gref contig raw records 3
+GREF FAILED chr20_7000000_s1
+[gref error]: node 3504 covered by two reference paths, including anc#1#chr20:7000001-8000000#0 and anc#1#chr20:7000001-8000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+GREF FAILED chr20_7000000_s2
+[gref error]: node 3281 covered by two reference paths, including anc#1#chr20:7000001-8000000#0 and anc#1#chr20:7000001-8000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_8000000_s1  plain wave records 1774  gref reference contig wave records 1774  gref contig raw records 0
+GREF FAILED chr20_8000000_s2
+[gref error]: node 4278 covered by two reference paths, including anc#1#chr20:8000001-9000000#0 and anc#1#chr20:8000001-9000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+chr20_9000000_s1  plain wave records 1792  gref reference contig wave records 1792  gref contig raw records 4
+GREF FAILED chr20_9000000_s2
+[gref error]: node 2012 covered by two reference paths, including anc#1#chr20:9000001-10000000#0 and anc#1#chr20:9000001-10000000#0. Graph reference path support currently requires disjoint acyclic reference paths
+replicates: 22
+
+===== vg_plain =====
+22 replicate(s)
+RECALL under successively stricter criteria, all variants
+  a record overlaps                                          0.9905
+  and its size matches                                       0.9886
+  and its type matches                                       0.9886
+  true count among overlapping alternates                    0.8580
+  true count among type matched alternates                   0.8447
+  a type matched alternate has the exact carrier set         0.8428
+
+PRECISION of the callset
+  callset alleles of at least 50 bp: 708
+  matching a true variant of compatible type and size: 0.9972
+RECALL by size class: overlap / size / type / count / count typed / carriers
+      100 n=   88  1.000  1.000  1.000  1.000  1.000  1.000
+      300 n=   88  0.989  0.977  0.977  0.966  0.955  0.955
+     1000 n=   88  1.000  1.000  1.000  1.000  1.000  1.000
+     3000 n=   88  1.000  1.000  1.000  0.875  0.875  0.875
+    10000 n=   88  0.989  0.989  0.989  0.739  0.727  0.716
+    30000 n=   88  0.966  0.966  0.966  0.568  0.511  0.511
+RECALL by true variant type
+  DEL  n=  376  0.995  0.992  0.992  0.992  0.989  0.989
+  DUP  n=  144  0.993  0.993  0.993  0.542  0.500  0.493
+  INV  n=    8  0.750  0.750  0.750  0.250  0.250  0.250
+
+===== vg_gref =====
+22 replicate(s)
+RECALL under successively stricter criteria, all variants
+  a record overlaps                                          0.9905
+  and its size matches                                       0.9886
+  and its type matches                                       0.9886
+  true count among overlapping alternates                    0.8580
+  true count among type matched alternates                   0.8447
+  a type matched alternate has the exact carrier set         0.8428
+
+PRECISION of the callset
+  callset alleles of at least 50 bp: 708
+  matching a true variant of compatible type and size: 0.9972
+RECALL by size class: overlap / size / type / count / count typed / carriers
+      100 n=   88  1.000  1.000  1.000  1.000  1.000  1.000
+      300 n=   88  0.989  0.977  0.977  0.966  0.955  0.955
+     1000 n=   88  1.000  1.000  1.000  1.000  1.000  1.000
+     3000 n=   88  1.000  1.000  1.000  0.875  0.875  0.875
+    10000 n=   88  0.989  0.989  0.989  0.739  0.727  0.716
+    30000 n=   88  0.966  0.966  0.966  0.568  0.511  0.511
+RECALL by true variant type
+  DEL  n=  376  0.995  0.992  0.992  0.992  0.989  0.989
+  DUP  n=  144  0.993  0.993  0.993  0.542  0.500  0.493
+  INV  n=    8  0.750  0.750  0.750  0.250  0.250  0.250

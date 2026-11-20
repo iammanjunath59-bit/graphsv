@@ -1,0 +1,28 @@
+108 replicate(s)
+replicates 108   true variants 2592
+merge rule: same kind; size within max(50 bp, 20%); start within max(200 bp, 0.5 x size); disjoint carriers; shared 21-mers >= 0.5; across records only: False
+
+RECALL                                 before    after
+  exact count, type matched           0.8627   0.9333
+  exact carrier set, type matched     0.8623   0.9333
+  variants gained 184   variants lost 0
+
+PRECISION                              before    after
+  alleles reported                      3420     2728
+  matching a true variant             0.9991   0.9989
+
+MERGED CLUSTERS (two or more records)
+  total 367
+    correct                367
+
+RECALL by type and size, exact carrier set: before -> after
+  DEL  100:0.996->1.000(n=277)  300:0.989->0.989(n=359)  1000:0.997->0.997(n=388)  3000:0.991->0.994(n=341)  10000:0.993->0.997(n=294)  30000:0.960->0.960(n=227)
+  DUP  100:0.968->0.974(n=155)  300:0.901->0.972(n=71)  1000:0.886->1.000(n=44)  3000:0.523->0.920(n=88)  10000:0.333->0.826(n=138)  30000:0.106->0.381(n=189)
+  INV  300:1.000->1.000(n=2)  3000:0.667->1.000(n=3)  30000:0.000->0.875(n=16)
+
+REMAINING FAILURES after merge, judged on the unmerged callset
+  DEL  n=  17  carriers_missing 8  no_matching_record 9
+  DUP  n= 154  carriers_missing 3  no_matching_record 4  partition_not_merged 147
+  INV  n=   2  no_matching_record 2
+
+wrote out/join_grid/k0.5_s0.20_p0.5_a0.perSV.tsv, .clusters.tsv, .summary.txt

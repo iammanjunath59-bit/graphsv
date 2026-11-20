@@ -1,0 +1,68 @@
+16:59 k0_s0.05_p0.5_a0  carrier 0.8623	0.9325  gained/lost 184	2  false fusions 1  precision 0.9989
+16:59 k0_s0.05_p1.0_a0  carrier 0.8623	0.9869  gained/lost 329	6  false fusions 4  precision 0.9988
+17:00 k0_s0.10_p0.5_a0  carrier 0.8623	0.9325  gained/lost 184	2  false fusions 1  precision 0.9989
+17:00 k0_s0.10_p1.0_a0  carrier 0.8623	0.9869  gained/lost 329	6  false fusions 4  precision 0.9988
+17:00 k0_s0.20_p0.5_a0  carrier 0.8623	0.9313  gained/lost 183	4  false fusions 3  precision 0.9989
+17:00 k0_s0.20_p1.0_a0  carrier 0.8623	0.9830  gained/lost 325	12  false fusions 9  precision 0.9988
+17:00 k0_s0.30_p0.5_a0  carrier 0.8623	0.9313  gained/lost 183	4  false fusions 4  precision 0.9989
+17:00 k0_s0.30_p1.0_a0  carrier 0.8623	0.9784  gained/lost 320	19  false fusions 15  precision 0.9988
+17:00 k0.5_s0.05_p0.5_a0  carrier 0.8623	0.9333  gained/lost 184	0  false fusions 0  precision 0.9989
+17:00 k0.5_s0.05_p1.0_a0  carrier 0.8623	0.9900  gained/lost 331	0  false fusions 0  precision 0.9988
+17:00 k0.5_s0.10_p0.5_a0  carrier 0.8623	0.9333  gained/lost 184	0  false fusions 0  precision 0.9989
+17:01 k0.5_s0.10_p1.0_a0  carrier 0.8623	0.9900  gained/lost 331	0  false fusions 0  precision 0.9988
+17:01 k0.5_s0.20_p0.5_a0  carrier 0.8623	0.9333  gained/lost 184	0  false fusions 0  precision 0.9989
+17:01 k0.5_s0.20_p1.0_a0  carrier 0.8623	0.9900  gained/lost 331	0  false fusions 0  precision 0.9988
+17:01 k0.5_s0.30_p0.5_a0  carrier 0.8623	0.9333  gained/lost 184	0  false fusions 0  precision 0.9989
+17:02 k0.5_s0.30_p1.0_a0  carrier 0.8623	0.9900  gained/lost 331	0  false fusions 0  precision 0.9988
+17:02 k0.8_s0.05_p0.5_a0  carrier 0.8623	0.9333  gained/lost 184	0  false fusions 0  precision 0.9989
+17:02 k0.8_s0.05_p1.0_a0  carrier 0.8623	0.9900  gained/lost 331	0  false fusions 0  precision 0.9988
+17:02 k0.8_s0.10_p0.5_a0  carrier 0.8623	0.9333  gained/lost 184	0  false fusions 0  precision 0.9989
+17:03 k0.8_s0.10_p1.0_a0  carrier 0.8623	0.9900  gained/lost 331	0  false fusions 0  precision 0.9988
+17:03 k0.8_s0.20_p0.5_a0  carrier 0.8623	0.9333  gained/lost 184	0  false fusions 0  precision 0.9989
+17:03 k0.8_s0.20_p1.0_a0  carrier 0.8623	0.9900  gained/lost 331	0  false fusions 0  precision 0.9988
+17:03 k0.8_s0.30_p0.5_a0  carrier 0.8623	0.9333  gained/lost 184	0  false fusions 0  precision 0.9989
+17:04 k0.8_s0.30_p1.0_a0  carrier 0.8623	0.9900  gained/lost 331	0  false fusions 0  precision 0.9988
+17:04 k0.9_s0.05_p0.5_a0  carrier 0.8623	0.9321  gained/lost 181	0  false fusions 0  precision 0.9989
+17:04 k0.9_s0.05_p1.0_a0  carrier 0.8623	0.9888  gained/lost 328	0  false fusions 0  precision 0.9988
+17:04 k0.9_s0.10_p0.5_a0  carrier 0.8623	0.9321  gained/lost 181	0  false fusions 0  precision 0.9989
+17:05 k0.9_s0.10_p1.0_a0  carrier 0.8623	0.9888  gained/lost 328	0  false fusions 0  precision 0.9988
+17:05 k0.9_s0.20_p0.5_a0  carrier 0.8623	0.9321  gained/lost 181	0  false fusions 0  precision 0.9989
+17:05 k0.9_s0.20_p1.0_a0  carrier 0.8623	0.9888  gained/lost 328	0  false fusions 0  precision 0.9988
+17:05 k0.9_s0.30_p0.5_a0  carrier 0.8623	0.9321  gained/lost 181	0  false fusions 0  precision 0.9989
+17:06 k0.9_s0.30_p1.0_a0  carrier 0.8623	0.9888  gained/lost 328	0  false fusions 0  precision 0.9988
+17:06 k0.8_s0.20_p1.0_a1  carrier 0.8623	0.8792  gained/lost 44	0  false fusions 0  precision 0.9990
+COMPLETE
+kmer  size_frac  pos_frac  across_only  carrier_before  carrier_after  gained  lost  false_fusion  clusters  precision_after
+0     0.05       0.5       0            0.8623          0.9325         184     2     1             368       0.9989
+0     0.05       1.0       0            0.8623          0.9869         329     6     4             333       0.9988
+0     0.10       0.5       0            0.8623          0.9325         184     2     1             368       0.9989
+0     0.10       1.0       0            0.8623          0.9869         329     6     4             333       0.9988
+0     0.20       0.5       0            0.8623          0.9313         183     4     3             369       0.9989
+0     0.20       1.0       0            0.8623          0.9830         325     12    9             334       0.9988
+0     0.30       0.5       0            0.8623          0.9313         183     4     4             370       0.9989
+0     0.30       1.0       0            0.8623          0.9784         320     19    15            336       0.9988
+0.5   0.05       0.5       0            0.8623          0.9333         184     0     0             367       0.9989
+0.5   0.05       1.0       0            0.8623          0.9900         331     0     0             331       0.9988
+0.5   0.10       0.5       0            0.8623          0.9333         184     0     0             367       0.9989
+0.5   0.10       1.0       0            0.8623          0.9900         331     0     0             331       0.9988
+0.5   0.20       0.5       0            0.8623          0.9333         184     0     0             367       0.9989
+0.5   0.20       1.0       0            0.8623          0.9900         331     0     0             331       0.9988
+0.5   0.30       0.5       0            0.8623          0.9333         184     0     0             367       0.9989
+0.5   0.30       1.0       0            0.8623          0.9900         331     0     0             331       0.9988
+0.8   0.05       0.5       0            0.8623          0.9333         184     0     0             367       0.9989
+0.8   0.05       1.0       0            0.8623          0.9900         331     0     0             331       0.9988
+0.8   0.10       0.5       0            0.8623          0.9333         184     0     0             367       0.9989
+0.8   0.10       1.0       0            0.8623          0.9900         331     0     0             331       0.9988
+0.8   0.20       0.5       0            0.8623          0.9333         184     0     0             367       0.9989
+0.8   0.20       1.0       0            0.8623          0.9900         331     0     0             331       0.9988
+0.8   0.30       0.5       0            0.8623          0.9333         184     0     0             367       0.9989
+0.8   0.30       1.0       0            0.8623          0.9900         331     0     0             331       0.9988
+0.9   0.05       0.5       0            0.8623          0.9321         181     0     0             364       0.9989
+0.9   0.05       1.0       0            0.8623          0.9888         328     0     0             328       0.9988
+0.9   0.10       0.5       0            0.8623          0.9321         181     0     0             364       0.9989
+0.9   0.10       1.0       0            0.8623          0.9888         328     0     0             328       0.9988
+0.9   0.20       0.5       0            0.8623          0.9321         181     0     0             364       0.9989
+0.9   0.20       1.0       0            0.8623          0.9888         328     0     0             328       0.9988
+0.9   0.30       0.5       0            0.8623          0.9321         181     0     0             364       0.9989
+0.9   0.30       1.0       0            0.8623          0.9888         328     0     0             328       0.9988
+0.8   0.20       1.0       1            0.8623          0.8792         44      0     0             252       0.9990

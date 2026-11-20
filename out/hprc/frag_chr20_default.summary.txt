@@ -1,0 +1,31 @@
+alleles of at least 50 bp with a carrier: 40203
+events after joining: 11358
+rule: size within max(50 bp, 20%); start within max(200 bp, 1.0 x size); disjoint haplotypes; shared 21-mers >= 0.8
+
+kind  size        events  fragmented  frac   alleles med  multi record  carriers outside largest allele
+DEL        50-100    1077        252  0.234          2.0           189  0.095
+DEL       100-300     756        239  0.316          2.0           203  0.115
+DEL      300-1000     411        110  0.268          2.0            97  0.063
+DEL     1000-3000     223         28  0.126          3.0            23  0.083
+DEL    3000-10000     146          7  0.048          2.0             6  0.035
+DEL   10000-30000      29          4  0.138          3.5             4  0.321
+DEL       >=30000      12          3  0.250          2.0             2  0.067
+INS        50-100    2202        873  0.396          3.0           554  0.192
+INS       100-300    2571       1247  0.485          3.0           743  0.282
+INS      300-1000    2035       1140  0.560          4.0           596  0.440
+INS     1000-3000    1296        642  0.495          4.0           333  0.593
+INS    3000-10000     523        225  0.430          3.0           112  0.690
+INS   10000-30000      51         26  0.510          4.5             8  0.807
+INS       >=30000      10          3  0.300          2.0             1  0.231
+INV        50-100      15          1  0.067          6.0             0  0.065
+INV      300-1000       1          1  1.000          6.0             0  0.272
+
+fragmented        events joined from two or more alleles
+alleles med       median alleles per fragmented event
+multi record      fragmented events whose alleles span two or more records
+carriers outside  share of all carriers in the class that are not in their
+                  event's largest allele, i.e. missed by a per allele count
+
+No truth set exists for real data, so these are joins by the rule, not
+verified events. In simulation the rule made no false joins at 21-mer
+thresholds of 0.5 to 0.9.

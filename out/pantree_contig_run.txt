@@ -1,0 +1,43 @@
+options: --ref-name anc --no-missingness --dfs-method contiguous --priority-samples anc   tag: pantree_contig
+pantree commit e80b7eb
+replicates with a pantree VCF: 108   failed: 0
+108 replicate(s)
+replicates: 108   true variants: 2592   callset alleles scored: 2636
+
+RECALL under successively stricter criteria, all variants
+  a record overlaps                                          0.9961
+  and its size matches                                       0.9942
+  and its type matches                                       0.9495
+  true count among overlapping alternates                    0.9252
+  true count among type matched alternates                   0.9147
+  a type matched alternate has the exact carrier set         0.9147
+
+PRECISION of the callset
+  callset alleles of at least 50 bp: 2636
+  matching a true variant of compatible type and size: 0.9401
+    DEL  n=  1810  precision 0.9845
+    INS  n=   821  precision 0.8417
+    INV  n=     5  precision 1.0000
+
+RECALL by size class: overlap / size / type / count / count typed / carriers
+      100 n=  432  0.991  0.991  0.991  0.988  0.988  0.988
+      300 n=  432  0.995  0.993  0.993  0.988  0.986  0.986
+     1000 n=  432  1.000  1.000  0.993  0.988  0.988  0.988
+     3000 n=  432  1.000  1.000  0.979  0.951  0.947  0.947
+    10000 n=  432  1.000  0.998  0.970  0.914  0.912  0.912
+    30000 n=  432  0.991  0.984  0.771  0.720  0.667  0.667
+
+RECALL by true variant type
+  DEL  n= 1886  0.997  0.994  0.941  0.943  0.937  0.937
+  DUP  n=  685  0.994  0.994  0.994  0.880  0.874  0.874
+  INV  n=   21  1.000  1.000  0.238  0.762  0.238  0.238
+
+FAILURE against the number of alleles at the matched site
+  alleles       1 to 2  n=  277  count 0.993  carriers 0.993
+  alleles       3 to 4  n=  539  count 0.996  carriers 0.991
+  alleles       5 to 9  n= 1428  count 0.989  carriers 0.985
+  alleles     10 to 29  n=  338  count 0.512  carriers 0.462
+
+Note: simulated duplications are tandem and appear in the callset as insertions, so DUP is matched against the insertion class. A VCF record cannot distinguish a tandem duplication from any other insertion of the same length without inspecting the sequence.
+
+wrote out/pantree_contig.perSV.tsv, .percall.tsv, .summary.txt

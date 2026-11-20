@@ -1,0 +1,25 @@
+start 2026-11-16 09:48:26
+09:55 done chr1  165M  events after joining: 50289
+10:02 done chr2  169M  events after joining: 57013
+10:06 done chr3  124M  events after joining: 32206
+10:10 done chr4  126M  events after joining: 47518
+10:14 done chr5  120M  events after joining: 43352
+10:20 done chr6  119M  events after joining: 38218
+10:29 done chr7  123M  events after joining: 49354
+10:36 done chr8  105M  events after joining: 35370
+10:43 done chr9  98M  events after joining: 27767
+10:54 done chr10  103M  events after joining: 39607
+11:01 done chr11  92M  events after joining: 28914
+11:09 done chr12  91M  events after joining: 31918
+11:14 done chr13  65M  events after joining: 26690
+Terminated                 bcftools view -r "$C" -Oz -o "$V.part" "$WAVE"
+FETCH FAILED chr14
+12:44 done chr15  74M  events after joining: 20675
+12:45 done chr16  70M  events after joining: 29417
+12:47 done chr17  66M  events after joining: 33270
+12:48 done chr18  51M  events after joining: 23685
+12:50 done chr19  54M  events after joining: 29097
+12:51 done chr20  46M  events after joining: 22175
+12:52 done chr21  31M  events after joining: 16894
+12:53 done chr22  42M  events after joining: 18206
+COMPLETE 2026-11-16 12:53:22

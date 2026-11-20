@@ -1,0 +1,35 @@
+haplotypes counted: all
+alleles of at least 50 bp with a carrier: 28951
+events after joining: 18206
+rule: size within max(10 bp, 1%); start within max(200 bp, 1.0 x size); disjoint haplotypes; shared 21-mers >= 0.8; same site only: True
+
+kind  size        events  fragmented  frac   alleles med  multi record  of which one site  carriers outside largest allele
+DEL        50-100    1535        230  0.150          2.0           119              119  0.046
+DEL       100-300    1246        156  0.125          2.0            96               96  0.034
+DEL      300-1000     567         39  0.069          2.0            26               26  0.009
+DEL     1000-3000     196          5  0.026          2.0             5                5  0.006
+DEL    3000-10000     108          5  0.046          2.0             0                0  0.063
+DEL   10000-30000      27          1  0.037          2.0             0                0  0.021
+DEL       >=30000      14          2  0.143          2.0             1                1  0.006
+INS        50-100    3586        613  0.171          2.0            67               67  0.075
+INS       100-300    4529       1014  0.224          2.0            78               78  0.138
+INS      300-1000    3739       1024  0.274          3.0            53               53  0.306
+INS     1000-3000    2184        536  0.245          3.0            16               16  0.344
+INS    3000-10000     377        109  0.289          3.0             6                6  0.611
+INS   10000-30000      68         15  0.221          2.0             1                1  0.745
+INS       >=30000      16         10  0.625          5.0             1                1  0.925
+INV        50-100      12          1  0.083          6.0             0                0  0.028
+INV     1000-3000       1          1  1.000          7.0             0                0  0.378
+INV       >=30000       1          0  0.000          0.0             0                0  0.000
+
+fragmented        events joined from two or more alleles
+alleles med       median alleles per fragmented event
+multi record      fragmented events whose alleles span two or more records
+one site          of those, events whose records all come from one graph
+                  site (same snarl ID); the rule never reads the ID
+carriers outside  share of all carriers in the class that are not in their
+                  event's largest allele, i.e. missed by a per allele count
+
+No truth set exists for real data, so these are joins by the rule, not
+verified events. In simulation the rule made no false joins at 21-mer
+thresholds of 0.5 to 0.9.

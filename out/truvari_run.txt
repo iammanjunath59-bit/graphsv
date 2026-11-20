@@ -1,0 +1,56 @@
+truvari Truvari v5.4.0
+replicates processed: 108
+
+===== split =====
+108 replicate(s)
+RECALL under successively stricter criteria, all variants
+  a record overlaps                                          0.9958
+  and its size matches                                       0.9942
+  and its type matches                                       0.9942
+  true count among overlapping alternates                    0.8711
+  true count among type matched alternates                   0.8627
+  a type matched alternate has the exact carrier set         0.8623
+
+PRECISION of the callset
+  callset alleles of at least 50 bp: 3420
+  matching a true variant of compatible type and size: 0.9991
+RECALL by true variant type
+  DEL  n= 1886  0.997  0.995  0.995  0.990  0.989  0.989
+  DUP  n=  685  0.994  0.994  0.994  0.565  0.534  0.533
+  INV  n=   21  0.905  0.905  0.905  0.190  0.190  0.190
+
+===== tdef =====
+108 replicate(s)
+RECALL under successively stricter criteria, all variants
+  a record overlaps                                          0.9958
+  and its size matches                                       0.9942
+  and its type matches                                       0.9942
+  true count among overlapping alternates                    0.9012
+  true count among type matched alternates                   0.8951
+  a type matched alternate has the exact carrier set         0.8951
+
+PRECISION of the callset
+  callset alleles of at least 50 bp: 2791
+  matching a true variant of compatible type and size: 0.9989
+RECALL by true variant type
+  DEL  n= 1886  0.997  0.995  0.995  0.991  0.990  0.990
+  DUP  n=  685  0.994  0.994  0.994  0.663  0.641  0.641
+  INV  n=   21  0.905  0.905  0.905  0.619  0.619  0.619
+
+===== tloose =====
+108 replicate(s)
+RECALL under successively stricter criteria, all variants
+  a record overlaps                                          0.9950
+  and its size matches                                       0.9934
+  and its type matches                                       0.9934
+  true count among overlapping alternates                    0.9282
+  true count among type matched alternates                   0.9248
+  a type matched alternate has the exact carrier set         0.9248
+
+PRECISION of the callset
+  callset alleles of at least 50 bp: 2578
+  matching a true variant of compatible type and size: 0.9988
+RECALL by true variant type
+  DEL  n= 1886  0.996  0.994  0.994  0.989  0.988  0.988
+  DUP  n=  685  0.994  0.994  0.994  0.771  0.759  0.759
+  INV  n=   21  0.905  0.905  0.905  0.619  0.619  0.619
