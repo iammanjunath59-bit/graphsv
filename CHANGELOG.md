@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.2 (November 2026)
+
+- figures/figS1_windows.py: Figure S1, recovery window by window along chromosomes 20 and 16 with segmental duplication content, from the deposited tables.
+
 ## v1.1.0 (November 2026)
 
 - graphsv 1.1.0: new option --carriers adds an allele_carriers column; output is otherwise identical to 1.0.0.

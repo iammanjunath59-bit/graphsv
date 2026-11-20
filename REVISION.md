@@ -55,6 +55,7 @@ Notes. graphsv's built in evaluation (`--truth`) checks the count only; `score_g
     python3 figures/fig1_type_effect.py --sim out/pr_wave.perSV.tsv --hprc out/hprc/genome_summary.by_chrom.tsv --out figures/output/Figure1
     python3 figures/fig2_mechanism.py --with out/mu0_ref.perSV.tsv --without out/mu0.perSV.tsv --pieces-with out/pieces.tsv --pieces-without out/pieces_mu0.tsv --roundtrip out/roundtrip.perSV.tsv --out figures/output/Figure2
     bash workflow/run_graphsv_revision.sh C      # Figures 3 and 4
+    python3 figures/figS1_windows.py --out figures/output/FigureS1
     python3 analysis/supp_tables.py --stages results/stages --pieces out/pieces.tsv
 
 Each figure script prints every value it plots. Figures 1 to 4 replace those of v1.0.0; the earlier figure scripts (`fig1_recovery_by_size.py`, `fig2_route_comparison.py`, `fig3_hprc_locus.py`, `plot_supp_fig1.py`) are kept for the record.
