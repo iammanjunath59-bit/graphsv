@@ -1,0 +1,8 @@
+reference GRCh38#0#chr20; trimmed reference starts at 25773114, 85,676 bp, 0 flank segments visited more than once
+paths seen: 724
+  forward: 353
+  no flank: 256
+  one flank only: 3
+  reversed: 112
+haplotypes with more than one complete path (left out): 0
+paths written: 465 (including the reference); segments: 28,162

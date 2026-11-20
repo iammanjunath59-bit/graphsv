@@ -5,15 +5,13 @@ from a pangenome graph, without deconstructing to VCF.
 
 Motivation
 ----------
-`vg deconstruct` (+ vcfbub + vcfwave) projects a graph's nested bubble
-structure onto linear VCF records. That projection is lossy, and the loss
-scales with variant size: in a 54-window, 2,592-SV benchmark, the true
-allele count was unrecoverable from the VCF for ~45% of 30 kb SVs, versus
-~1% of SVs below 1 kb. The same information is intact in the graph -- read
-by traversal identity, the same PGGB graphs return the correct allele
-count for 100% of SVs from 300 bp to 30 kb.
-
-This tool reads the graph.
+Converting a pangenome graph to VCF (vg deconstruct, vcfbub, vcfwave)
+divides the carriers of an insertion or duplication among several ALT
+alleles when the inserted copies differ by point mutations, so per allele
+counts understate the event. The haplotype paths of the graph still hold
+the full count. This tool reads it from the paths, comparing traversals
+only over segments long enough to define a structural variant. Benchmark
+results and the commands that produce them are in REVISION.md.
 
 Algorithm
 ---------
@@ -54,6 +52,11 @@ TSV, one row per polymorphic site:
 `pos`/`end` are reference-path coordinates spanned by the bubble interior.
 `ac_total` is the number of haplotypes not carrying the reference allele.
 
+With --carriers (added in 1.1.0) a further column, allele_carriers, lists
+the carrier paths of each ALT allele: names within an allele are separated
+by ';' and alleles by ',', in the order of allele_acs. Without the option
+the output is identical to version 1.0.0.
+
 Usage
 -----
   # call
@@ -64,7 +67,7 @@ Usage
                     --truth run.truth_svs.tsv
 """
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 import argparse
 import sys
@@ -336,6 +339,9 @@ def main():
     ap.add_argument("--max-merge-gap", type=int, default=50000,
                     help="merge adjacent sites sharing a carrier set within "
                          "this distance; 0 disables merging")
+    ap.add_argument("--carriers", action="store_true",
+                    help="add an allele_carriers column with the carrier "
+                         "paths of each ALT allele")
     ap.add_argument("--truth", help="optional truth_svs.tsv to evaluate against")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
@@ -363,6 +369,11 @@ def main():
 
     cols = ["pos", "end", "ref_len", "n_alleles", "ac_total",
             "allele_lens", "allele_acs"]
+    if args.carriers:
+        for st in sites:
+            st["allele_carriers"] = ",".join(
+                ";".join(sorted(c)) for c in st["_carriers"])
+        cols.append("allele_carriers")
     with open(args.out, "w") as fh:
         fh.write("\t".join(cols) + "\n")
         for st in sites:

@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.1.0 (November 2026)
+
+- graphsv 1.1.0: new option --carriers adds an allele_carriers column; output is otherwise identical to 1.0.0.
+- analysis/score_graphsv.py: scores graphsv calls on the criteria used for the VCF routes (count, type matched count, exact carrier set).
+- HPRC locus tools: hprc/gfa_extract_locus.py (cuts one locus from a large GFA for graphsv), hprc/diagnose_locus.py (anchors and bubbles as graphsv sees them), hprc/compare_graphsv_locus.py (graphsv carriers against graph dosage and VCF).
+- workflow/run_graphsv_revision.sh: runs all of the above and Figures 3 and 4.
+- Figure 3 now scores every route on the exact carrier set; Figure 4c adds graphsv.
+- Result tables in out/gsv_car and out/hprc/graph.
+
 ## v1.0.1 (November 2026)
 
 Analyses added during revision at BMC Genomics. graphsv is unchanged (1.0.0). See REVISION.md for the command behind each new result.

@@ -1,6 +1,6 @@
-# Revision analyses (repository release v1.0.1)
+# Revision analyses (repository releases v1.0.1 and v1.1.0)
 
-This release adds the analyses made in response to review at BMC Genomics. graphsv itself is unchanged (version 1.0.0). Every number added to the revised manuscript can be regenerated with the commands below, run from the repository root with the `pg` conda environment. Paths to simulated panels assume the rebuilt sweep at `~/pangenome_rebuild` (set `REBUILD_DIR` otherwise); panels regenerate exactly from the deposited seeds.
+These releases add the analyses made in response to review at BMC Genomics. v1.0.1 left graphsv unchanged (1.0.0). v1.1.0 adds one option to graphsv, --carriers, which writes the carrier haplotypes of each allele; without it the output is identical to 1.0.0 (graphsv 1.1.0). Every number added to the revised manuscript can be regenerated with the commands below, run from the repository root with the `pg` conda environment. Paths to simulated panels assume the rebuilt sweep at `~/pangenome_rebuild` (set `REBUILD_DIR` otherwise); panels regenerate exactly from the deposited seeds.
 
 ## Scoring
 
@@ -40,12 +40,21 @@ This release adds the analyses made in response to review at BMC Genomics. graph
 | Dosage of the 62 kb deletion in the PGGB HPRC chr20 graph | `python3 hprc/gfa_locus_dosage.py --gfa <chr20 GFA> --ref-prefix GRCh38 --event 25783207-25845155 --right-start 25850000 --flank 10000 --out out/hprc/graph/del62k` | `out/hprc/graph/del62k.*` |
 | VCF and graph carriers compared | `python3 hprc/compare_locus_carriers.py --vcf out/hprc/locus.wave.vcf --dosage out/hprc/graph/del62k.paths.tsv --cut 0.8` | |
 
+## graphsv 1.1.0 (release v1.1.0)
+
+| Analysis | Command | Output |
+|---|---|---|
+| graphsv with carriers on the 108 rebuilt graphs; check against the deposited calls; score on count, type matched count and exact carrier set | `bash workflow/run_graphsv_revision.sh A` (uses `analysis/score_graphsv.py`) | `out/gsv_car/`, `out/gsv_car.perSV.tsv` |
+| graphsv on the 62 kb deletion locus of the PGGB HPRC chr20 graph: extract, run on all haplotypes, diagnose, run without HG02735#1, compare with dosage and VCF | `nohup bash workflow/run_graphsv_revision.sh B > graphsv_hprc.log 2>&1 &` (uses `hprc/gfa_extract_locus.py`, `hprc/diagnose_locus.py`, `hprc/compare_graphsv_locus.py`; `HPRC_GFA` sets the graph) | `out/hprc/graph/del62k_locus.*`, `del62k_locus_x1.gsv.tsv` |
+| Figures 3 and 4 | `bash workflow/run_graphsv_revision.sh C` | `figures/output/Figure3.*`, `Figure4.*` |
+
+Notes. graphsv's built in evaluation (`--truth`) checks the count only; `score_graphsv.py` reproduces it exactly on the deposited calls and adds the two stricter criteria used for the VCF routes. On the rebuilt graphs, 20 of 108 replicates give calls slightly different from those deposited in `results/sweep54d` (built from the original graphs); graphsv 1.0.0 and 1.1.0 give identical calls on the same graph, so the difference comes from PGGB, which is not byte reproducible when run with several threads. The extracted locus graph files (`*.gfa`) are not committed (see `.gitignore`); part B regenerates them.
+
 ## Figures and supplementary tables
 
     python3 figures/fig1_type_effect.py --sim out/pr_wave.perSV.tsv --hprc out/hprc/genome_summary.by_chrom.tsv --out figures/output/Figure1
     python3 figures/fig2_mechanism.py --with out/mu0_ref.perSV.tsv --without out/mu0.perSV.tsv --pieces-with out/pieces.tsv --pieces-without out/pieces_mu0.tsv --roundtrip out/roundtrip.perSV.tsv --out figures/output/Figure2
-    python3 figures/fig3_routes.py --out-dir out --gsv-glob 'results/sweep54d/*.gsv.eval.tsv' --out figures/output/Figure3
-    python3 figures/fig4_hprc.py --scale-glob 'out/hprc/scale_*_s*.events.tsv' --full out/hprc/frag_chr20_strict_site.events.tsv --dosage out/hprc/graph/del62k.paths.tsv --vcf out/hprc/locus.wave.vcf --out figures/output/Figure4
+    bash workflow/run_graphsv_revision.sh C      # Figures 3 and 4
     python3 analysis/supp_tables.py --stages results/stages --pieces out/pieces.tsv
 
 Each figure script prints every value it plots. Figures 1 to 4 replace those of v1.0.0; the earlier figure scripts (`fig1_recovery_by_size.py`, `fig2_route_comparison.py`, `fig3_hprc_locus.py`, `plot_supp_fig1.py`) are kept for the record.

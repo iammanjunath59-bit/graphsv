@@ -19,8 +19,11 @@ recovers a split deletion that an independently built graph confirms.
      haplotype's status in the joined VCF records (no graph used).
      Inputs: gfa_locus_dosage.py paths table; the locus wave VCF.
 
-  c  The same event counted three ways: the largest single VCF record, the
-     joined VCF records, and the graph (dosage below --cut).
+  c  The same event counted four ways: the largest single VCF record, the
+     joined VCF records, the graph dosage (below --cut), and graphsv run on
+     the locus cut from the same graph (optional, --gsv-calls; carriers of
+     the ALT allele that lacks most of the reference traversal, in the call
+     overlapping the event).
 
 Every plotted value is printed.
 
@@ -28,7 +31,8 @@ Usage:
     python3 figures/fig4_hprc.py --scale-glob 'out/hprc/scale_*_s*.events.tsv' \\
         --full out/hprc/frag_chr20_strict_site.events.tsv \\
         --dosage out/hprc/graph/del62k.paths.tsv --vcf out/hprc/locus.wave.vcf \\
-        --out figures/output/Figure4
+        --gsv-calls out/hprc/graph/del62k_locus_x1.gsv.tsv \\
+        --gsv-offset out/hprc/graph/del62k_locus.offset.txt --out figures/output/Figure4
 """
 
 import argparse
@@ -108,6 +112,9 @@ def main():
     ap.add_argument("--min-del", type=int, default=50000)
     ap.add_argument("--from", dest="frm", type=int, default=25700000)
     ap.add_argument("--to", type=int, default=25900000)
+    ap.add_argument("--gsv-calls", default=None, help="graphsv --carriers output for the locus")
+    ap.add_argument("--gsv-offset", default=None, help="offset file from gfa_extract_locus.py")
+    ap.add_argument("--event", default="25783207-25845155")
     ap.add_argument("--out", required=True)
     a_ = ap.parse_args()
 
@@ -132,6 +139,22 @@ def main():
     dos = {k: v[0] for k, v in gpaths.items()}
     vcar, called, recs = vcf_carriers(a_.vcf, a_.frm, a_.to, a_.min_del)
     gcar = {k for k, v in dos.items() if v < a_.cut}
+    gsv = None
+    if a_.gsv_calls:
+        es, ee = (int(x) for x in a_.event.split("-"))
+        off = int(open(a_.gsv_offset).read().split()[0])
+        best = None
+        with open(a_.gsv_calls) as fh:
+            for r in csv.DictReader(fh, delimiter="\t"):
+                p, q, R = int(r["pos"]) + off, int(r["end"]) + off, int(r["ref_len"])
+                if not (q > es and p < ee):
+                    continue
+                for L, g in zip(r["allele_lens"].split(","), r["allele_carriers"].split(",")):
+                    if best is None or R - int(L) > best[0]:
+                        best = (R - int(L), int(L), R, g)
+        if best is None:
+            raise SystemExit("no graphsv call overlaps the event")
+        gsv = {(x.split("#")[0], x.split("#")[1]) for x in best[3].split(";") if x}
 
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 8})
     fig = plt.figure(figsize=(7.4, 5.4), constrained_layout=True)
@@ -142,8 +165,8 @@ def main():
     xs = list(range(len(BINS)))
     for col, n in zip(RAMP, sorted(sub)):
         mean = [sum(d[b] for d in sub[n]) / len(sub[n]) for b in BINS]
-        lo = [mean[i] - min(d[b] for d in sub[n]) for i, b in enumerate(BINS)]
-        hi = [max(d[b] for d in sub[n]) - mean[i] for i, b in enumerate(BINS)]
+        lo = [max(0.0, mean[i] - min(d[b] for d in sub[n])) for i, b in enumerate(BINS)]
+        hi = [max(0.0, max(d[b] for d in sub[n]) - mean[i]) for i, b in enumerate(BINS)]
         ax1.errorbar(xs, mean, yerr=[lo, hi], color=col, lw=1.8, marker="o", ms=4.5, mec="white",
                      mew=0.8, capsize=0, elinewidth=1.0, label=f"{n} haplotypes ({len(sub[n])} draws)")
     ax1.plot(xs, [full[b] for b in BINS], color=RAMP[-1], lw=2.2, marker="o", ms=5, mec="white",
@@ -191,7 +214,10 @@ def main():
             ("Joined VCF\nrecords", [(n, BLUE if i == 0 else "#86b6ef") for i, (_, n) in
                                      enumerate(sorted(recs, key=lambda r: -r[1]))]),
             ("Graph\n(dosage < cut)", [(both, BLUE), (gonly_called, GREY), (gonly_unc, LIGHT)])]
-    yy = [2, 1, 0]
+    if gsv is not None:
+        rows.append(("graphsv", [(len(gsv & vcar), BLUE), (len((gsv - vcar) & called), GREY),
+                                 (len(gsv - called), LIGHT)]))
+    yy = list(range(len(rows)))[::-1]
     for y, (lab, segs) in zip(yy, rows):
         left = 0
         for n, col in segs:
@@ -201,7 +227,7 @@ def main():
     ax3.set_yticks(yy); ax3.set_yticklabels([r[0] for r in rows], fontsize=7)
     ax3.set_xlim(0, max(260, len(gcar) + 30))
     ax3.set_xlabel("Haplotypes carrying the deletion", color=INK)
-    ax3.set_title("c  One event, three counts", loc="left", fontsize=8.5, color=INK)
+    ax3.set_title(f"c  One event, {'four' if gsv is not None else 'three'} counts", loc="left", fontsize=8.5, color=INK)
     ax3.xaxis.grid(True, color=GRID, linewidth=0.8)
     style(ax3)
 
@@ -223,6 +249,12 @@ def main():
     print(f"   largest record {largest}; joined {len(vcar)} of {len(called)} called haplotypes")
     print(f"   graph carriers {len(gcar)}: also VCF carriers {both}, VCF non carriers {gonly_called}, "
           f"not called in VCF {gonly_unc}")
+    if gsv is not None:
+        print(f"   graphsv allele {best[1]:,} bp against reference traversal {best[2]:,} bp: {len(gsv)} carriers; "
+              f"also VCF carriers {len(gsv & vcar)}, VCF non carriers {len((gsv - vcar) & called)}, "
+              f"not called in VCF {len(gsv - called)}; also dosage < cut {len(gsv & gcar)}, "
+              f"dosage carriers not graphsv carriers {len((gcar & set(dos)) - gsv)} "
+              f"(includes any haplotype set aside before running graphsv)")
 
 
 if __name__ == "__main__":
